@@ -12,8 +12,8 @@ import { zodValidator } from '@tanstack/zod-form-adapter'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { useState } from 'react'
-import Spinner from '@/components/misc/spinner'
 import { updatePassword } from '@/actions/auth/user/update-password'
+import Spinner from '@/components/misc/spinner'
 
 const updatePasswordSchema = z.object({
   password: z.string().min(1),

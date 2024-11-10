@@ -13,11 +13,11 @@ import { useRouter } from 'next/navigation'
 import DashboardSettingsAccountEmailVerification from './dashboard-settings-account-email-verification'
 import Name from '@/components/auth/form/name'
 import Email from '@/components/auth/form/email'
-import Spinner from '@/components/misc/spinner'
 import { toast } from 'sonner'
 import UpdatePassword from '@/components/auth/update-password/update-password'
 import { useState } from 'react'
 import { MAX_IMAGE_SIZE_STRING } from '@/constants'
+import Spinner from '@/components/misc/spinner'
 
 const userFormSchema = z.object({
   name: z.string().min(1),
