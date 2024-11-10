@@ -5,7 +5,6 @@ import { useForm } from '@tanstack/react-form'
 import * as z from 'zod'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
-import Spinner from '../../misc/spinner'
 import { UserCheck } from 'lucide-react'
 import { zodValidator } from '@tanstack/zod-form-adapter'
 import { authClient } from '@/authClient'
@@ -18,6 +17,7 @@ import Name from './name'
 import Email from './email'
 import OAuth from '../oauth/oauth'
 import OrLabel from './or-label'
+import Spinner from '@/components/misc/spinner'
 
 export const userAuthSignupSchema = z.object({
   name: z.string().min(1),

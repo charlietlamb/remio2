@@ -5,7 +5,6 @@ import { useForm } from '@tanstack/react-form'
 import * as z from 'zod'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
-import Spinner from '../../misc/spinner'
 import { UserCheck } from 'lucide-react'
 import { zodValidator } from '@tanstack/zod-form-adapter'
 import AuthFormForgotPassword from './auth-form-forgot-password'
@@ -16,6 +15,7 @@ import Email from './email'
 import Password from './password'
 import OrLabel from './or-label'
 import OAuth from '../oauth/oauth'
+import Spinner from '@/components/misc/spinner'
 
 export const userAuthSchema = z.object({
   email: z.string().email(),
